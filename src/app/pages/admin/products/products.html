@@ -1,0 +1,8 @@
+<h1>Danh sách sản phẩm</h1>
+<ul>
+    @for (product of products; track product.id) {
+        <li>
+            {{product.name}} <button [routerLink]="['/admin/products/edit',product.id]">Sửa</button>
+        </li>
+    }
+</ul>

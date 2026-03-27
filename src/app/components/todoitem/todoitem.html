@@ -1,0 +1,3 @@
+<p [style.font-weight]="(todoInfo.first)?'bold':''" [style.font-style]="(todoInfo.last)?'italic':''" [style.color]="(todoInfo.even)?'blue':'red'">STT: {{todoInfo.index+1}}. {{todoInfo.todo.name}} - Độ ưu tiên: {{todoInfo.todo.priority}}
+    <button (click)="onClick(todoInfo.todo.name)">Chọn</button>
+</p>
