@@ -7,12 +7,14 @@ import { Detail } from './pages/detail/detail';
 import { Products } from './pages/admin/products/products';
 import { Productadd } from './pages/admin/productadd/productadd';
 import { Productedit } from './pages/admin/productedit/productedit';
+import { Cart } from './pages/cart/cart';
 
 export const routes: Routes = [
     {path:'',component:Clientlayout,children:[
         {path:'',component:Homepage},
         {path:'category',component:Category},
-        {path:'detail',component:Detail}
+        {path:'detail',component:Detail},
+        {path:'cart',component:Cart}
     ]},
     {path:'admin',component:Adminlayout,children:[
         {path:'products',component:Products},
