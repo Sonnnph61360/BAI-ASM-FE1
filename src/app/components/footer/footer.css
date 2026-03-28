@@ -1,0 +1,10 @@
+:host {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+h2 {
+    font-family: 'Integral CF', sans-serif; /* Nếu em có font này, không thì dùng font-black của tailwind */
+    color: white !important;
+}
