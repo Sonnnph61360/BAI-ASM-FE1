@@ -1,8 +1,11 @@
-<h1>Danh sách sản phẩm</h1>
-<ul>
-    @for (product of products; track product.id) {
-        <li>
-            {{product.name}} <button [routerLink]="['/admin/products/edit',product.id]">Sửa</button>
-        </li>
-    }
-</ul>
+@for (item of products; track item.id) {
+  <div class="product-item">
+    <p>{{ item.name }}</p>
+    <p>{{ item.price }}</p>
+    <button 
+      (click)="handleDelete(item.id)"
+      class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+      Xóa
+    </button>
+  </div>
+}

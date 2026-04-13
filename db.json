@@ -1,0 +1,80 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Áo"
+    },
+    {
+      "id": "2",
+      "name": "Quần"
+    },
+    {
+      "id": "3",
+      "name": "Váy"
+    },
+    {
+      "id": "4",
+      "name": "Áo khoác"
+    },
+    {
+      "name": "dép",
+      "id": "kpk0Ns7ImF8"
+    },
+    {
+      "name": "mũ cối",
+      "id": "PtXEXtG_R7o"
+    },
+    {
+      "name": "đồ ngủ",
+      "id": "iBlJmnCwxVA"
+    },
+    {
+      "name": "",
+      "id": "Wf0Ypr1JJGg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Áo thun nam basic",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcREBvYX_621jAKpb63X_RGBxP2Kw9BTN4_GekxZmEE34OXGZG5JSn0oiDtzifTdUqbG1laHD4XrBYEH1AlZNIalUX62EkUjht-Lyyyv49J7s-BYQAVh_A_zASvtZLEy-orcGjo8gQ&usqp=CAc",
+      "price": 150000,
+      "description": "Áo thun cotton mềm mại",
+      "categoryId": 1
+    },
+    {
+      "id": "2",
+      "name": "Áo hoodie nữ",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRwRwckeswYF0eFNmHXuza6H9DoljJSzxr1-BaORdvD4W9n5T3FrrxCvxHxNubuSZxvr8JC184bLl6HLpUYTh__NkrA3G35vUTpQfyh-WDt--T-i3cxTeIfEeYV-v7ZUNoqo94x1IQ&usqp=CAc",
+      "price": 350000,
+      "description": "Hoodie form rộng giữ ấm",
+      "categoryId": 1
+    },
+    {
+      "id": "3",
+      "name": "Quần jean nam",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS7xkAzSQC_AJhO20SHlRO-zGA9f5Fjy4oPak4b5JJRMny5I0t0SzPjWhq0r0sgweLwaYW_jZHWcG5XS8TPM9TFgTXvclZqhjXc5d8psN1Bsi1kB_HS9UMUlCr8GK5KzAMYXJkHYBo&usqp=CAc",
+      "price": 400000,
+      "description": "Quần jean co giãn",
+      "categoryId": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "khachoandz@gmail.com",
+      "password": "123456",
+      "id": "A6zZVcF2Brg"
+    },
+    {
+      "email": "khachoandz1@gmail.com",
+      "password": "123456",
+      "id": "gJ6t1H2"
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "id": "_dAuipW"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
