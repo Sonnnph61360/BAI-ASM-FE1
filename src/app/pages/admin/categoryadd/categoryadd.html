@@ -1,1 +1,22 @@
-<p>categoryadd works!</p>
+<div class="max-w-xl mx-auto p-8 bg-white shadow-xl rounded-xl mt-12 border-t-4 border-green-500">
+    <div class="mb-8">
+        <h2 class="text-2xl font-bold text-gray-800">Thêm Danh Mục Mới</h2>
+        <p class="text-gray-500 text-sm">Nhập tên loại hàng hóa bạn muốn quản lý</p>
+    </div>
+    <form nz-form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+        <nz-form-item>
+            <nz-form-label [nzSpan]="7" nzRequired nzFor="name">Tên danh mục</nz-form-label>
+            <nz-form-control [nzSpan]="17" nzErrorTip="Tên danh mục không được để trống và từ 2 ký tự!">
+                <input nz-input formControlName="name" id="name" placeholder="Ví dụ: Đồ gia dụng, Thời trang Nam..." />
+            </nz-form-control>
+        </nz-form-item>
+        <div class="flex justify-end gap-3 mt-8">
+            <button nz-button nzType="default" type="button" (click)="router.navigate(['/admin/categories'])">
+                Quay lại
+            </button>
+            <button nz-button nzType="primary" [disabled]="categoryForm.invalid" class="bg-green-600 border-green-600">
+                Xác nhận thêm
+            </button>
+        </div>
+    </form>
+</div>

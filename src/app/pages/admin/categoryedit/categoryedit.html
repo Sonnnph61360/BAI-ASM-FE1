@@ -1,1 +1,24 @@
-<p>categoryedit works!</p>
+<div class="max-w-xl mx-auto p-8 bg-white shadow-xl rounded-xl mt-12 border-t-4 border-blue-500">
+    <div class="flex justify-between items-center mb-8">
+        <div>
+            <h2 class="text-2xl font-bold text-gray-800">Chỉnh Sửa Danh Mục</h2>
+            <p class="text-gray-500 text-sm">Cập nhật danh mục</p>
+        </div>
+    </div>
+    <form nz-form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+        <nz-form-item>
+            <nz-form-label [nzSpan]="7" nzRequired nzFor="name">Tên danh mục</nz-form-label>
+            <nz-form-control [nzSpan]="17" nzErrorTip="Tên danh mục không được để trống và từ 2 ký tự!">
+                <input nz-input formControlName="name" id="name" placeholder="Ví dụ: Đồ gia dụng, Thời trang Nam..." />
+            </nz-form-control>
+        </nz-form-item>
+        <div class="flex justify-end gap-3 mt-8">
+            <button nz-button nzType="default" type="button" (click)="router.navigate(['/admin/categories'])">
+                Hủy bỏ
+            </button>
+            <button nz-button nzType="primary" [disabled]="categoryForm.invalid" class="bg-blue-600 border-blue-600">
+                Lưu thay đổi
+            </button>
+        </div>
+    </form>
+</div>

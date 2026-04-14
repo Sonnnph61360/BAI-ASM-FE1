@@ -8,6 +8,9 @@ import { Products } from './pages/admin/products/products';
 import { Productadd } from './pages/admin/productadd/productadd';
 import { Productedit } from './pages/admin/productedit/productedit';
 import { Cart } from './pages/cart/cart';
+import { CategoryList } from './pages/admin/category-list/category-list';
+import { Categoryadd } from './pages/admin/categoryadd/categoryadd';
+import { Categoryedit } from './pages/admin/categoryedit/categoryedit';
 
 export const routes: Routes = [
     {path:'',component:Clientlayout,children:[
@@ -20,5 +23,10 @@ export const routes: Routes = [
         {path:'products',component:Products},
         {path:'products/add',component:Productadd},
         { path: 'productedit/:id', component: Productedit },
-    ]}
+        { path: 'category', component: CategoryList },
+        { path: 'categoryadd', component: Categoryadd },
+        { path: 'categoryedit/:id', component: Categoryedit },
+    ]},
+// { path: 'categoryadd', component: Categoryadd },
+// { path: 'categoryedit/:id', component: Categoryedit },
 ];

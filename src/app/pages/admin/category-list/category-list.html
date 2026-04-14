@@ -1,1 +1,31 @@
-<p>category-list works!</p>
+<div class="overflow-x-auto rounded-lg border border-gray-200 shadow-md m-5">
+    <div class="flex justify-between items-center p-4 bg-white">
+        <h2 class="text-xl font-bold">Quản lý danh mục</h2>
+        <a routerLink="/admin/categoryadd"
+            class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition no-underline">
+            + Thêm danh mục
+        </a>
+    </div>
+    <table class="w-full border-collapse bg-white text-left text-sm text-gray-500">
+        <thead class="bg-gray-50">
+            <tr>
+                <th class="px-6 py-4 font-medium text-gray-900">ID</th>
+                <th class="px-6 py-4 font-medium text-gray-900">Tên danh mục</th>
+                <th class="px-6 py-4 font-medium text-gray-900 text-right">Thao tác</th>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+            @for (cat of categories; track cat.id) {
+                <tr class="hover:bg-gray-50 transition">
+                    <td class="px-6 py-4">#{{ cat.id }}</td>
+                    <td class="px-6 py-4 font-medium text-gray-900">{{ cat.name }}</td>
+                    <td class="px-6 py-4 text-right">
+                        <div class="flex justify-end gap-2">
+                            <a [routerLink]="['/admin/categoryedit', cat.id]" class="bg-blue-500 text-white px-3 py-1.5 rounded text-xs hover:bg-blue-600 no-underline">Sửa</a>
+                            <button (click)="handleDelete(cat.id)" class="bg-red-500 text-white px-3 py-1.5 rounded text-xs hover:bg-red-600">Xóa</button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
